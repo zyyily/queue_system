@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.queue.mapper.WindowMapper">
+
+    <select id="selectAllWindow" parameterType="com.queue.pojo.Window" resultType="com.queue.pojo.Window">
+        select w.id as id,w.window_no as windowNo,w.business_type as businessType,
+          w.status as status,w.business_num as businessNum,w.business_now_num as businessNowNum,w.window_status as windowStatus,
+          s.staff_no as staffNo,s.staff_name as staffName,
+          case when w.status=0 then '关闭' when w.status=1 then '开放' end as statusName,
+          case when w.window_status=0 then '空闲' when w.window_status=1 then '已满' end as windowStatusName
+        from tb_window w
+        left join tb_staff s on w.id = s.window_id
+        where 1=1
+        <!--<if test="userNo!=null and userNo!=''">-->
+            <!--and user_no=#{userNo}-->
+        <!--</if>-->
+        <!--<if test="password!=null and password!=''">-->
+            <!--and password=#{password}-->
+        <!--</if>-->
+    </select>
+
+    <!--<insert id="insertUser" parameterType="Users">-->
+        <!--insert into tb_user(user_no,password,email,phone)-->
+        <!--values (#{userNo},#{password},#{email},#{phone})-->
+    <!--</insert>-->
+
+    <!--<update id="updateUser" parameterType="Users">-->
+        <!--update tb_user-->
+        <!--<trim prefix="set" suffixOverrides=",">-->
+            <!--<if test="userNo!=null and userNo!=''">-->
+                <!--user_no=#{userNo},-->
+            <!--</if>-->
+            <!--<if test="password!=null and password!=''">-->
+                <!--password=#{password},-->
+            <!--</if>-->
+            <!--<if test="email!=null and email!=''">-->
+                <!--email=#{email},-->
+            <!--</if>-->
+            <!--<if test="phone!=null and phone!=''">-->
+                <!--phone=#{phone}-->
+            <!--</if>-->
+        <!--</trim>-->
+        <!--where id=#{id}-->
+    <!--</update>-->
+
+</mapper>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper  namespace="com.queue.mapper.UserMapper">
+    <select id="selectUserList" parameterType="com.queue.pojo.Users" resultType="com.queue.pojo.Users">
+        select id as id,user_no as userNo,email as email,phone as phone
+        from tb_user
+        where 1=1
+        <if test="userNo!=null and userNo!=''">
+            and user_no=#{userNo}
+        </if>
+        <if test="password!=null and password!=''">
+            and password=#{password}
+        </if>
+    </select>
+
+    <insert id="insertUser" parameterType="com.queue.pojo.Users">
+        insert into tb_user(user_no,password,email,phone)
+        values (#{userNo},#{password},#{email},#{phone})
+    </insert>
+
+    <update id="updateUser" parameterType="com.queue.pojo.Users">
+        update tb_user
+        <trim prefix="set" suffixOverrides=",">
+            <if test="userNo!=null and userNo!=''">
+                user_no=#{userNo},
+            </if>
+            <if test="password!=null and password!=''">
+                password=#{password},
+            </if>
+            <if test="email!=null and email!=''">
+                email=#{email},
+            </if>
+            <if test="phone!=null and phone!=''">
+                phone=#{phone}
+            </if>
+        </trim>
+        where id=#{id}
+    </update>
+</mapper>
