@@ -8,6 +8,8 @@ import com.queue.util.ResultBean;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.List;
 
 @Service
@@ -33,6 +35,9 @@ public class UserServiceImpl implements UserService {
     @Override
     public ResultBean register(Users users) throws Exception {
         ResultBean resultBean=new ResultBean();
+        Date date=new Date();
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+        users.setCreateTime(sdf.format(date));
         userMapper.insertUser(users);
         resultBean.setSuccess(true);
         resultBean.setMessage("注册成功!");

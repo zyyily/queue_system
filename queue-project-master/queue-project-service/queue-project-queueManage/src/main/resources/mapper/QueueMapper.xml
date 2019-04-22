@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper  namespace="com.queue.mapper.QueueMapper">
+    <select id="getQueueList" parameterType="com.queue.pojo.Queues" resultType="com.queue.pojo.Queues">
+        select q.id as id,q.queue_no as queueNo,q.user_id as userId,u.user_no as userNo,b.id as businessId,b.business_name as businessName,
+        w.id as windowId,w.window_no as windowNo,q.create_time as createTime,q.queue_num as queueNum,q.queue_num*2 as waitTime
+        from tb_queue q
+        left join tb_user u on u.id=q.user_id
+        left join tb_business b on b.id=q.business_id
+        left join tb_window w on w.id=q.window_id
+        where 1=1
+        <if test="windowId!=null and windowId!=''">
+            and q.window_id=#{windowId}
+        </if>
+        <if test="createTime!=null and createTime!=null">
+            and q.create_time like '%${createTime}%' order by q.id
+        </if>
+        order by q.create_time DESC
+    </select>
+
+
+</mapper>

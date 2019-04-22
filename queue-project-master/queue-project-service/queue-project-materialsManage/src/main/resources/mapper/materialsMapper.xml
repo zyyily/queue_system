@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper  namespace="com.queue.mapper.MaterialsMapper">
+    <select id="getMaterialsList" parameterType="com.queue.pojo.Materials" resultType="com.queue.pojo.Materials">
+        select m.id as id,m.material_no as materialsNo,m.material_name as materialsName,b.business_name as businessName
+        from tb_material m
+        left join tb_business b on b.id=m.business_id
+        where 1=1
+        <if test="businessId!=null and businessId!=''">
+            and m.business_id=#{businessId}
+        </if>
+        order by m.create_time DESC
+    </select>
+    <insert id="addMaterial" parameterType="com.queue.pojo.Materials">
+        insert tb_material(material_no,material_name,business_id,create_time)
+        values (#{materialsNo},#{materialsName},#{businessId},#{createTime})
+    </insert>
+    <update id="updateMaterial" parameterType="com.queue.pojo.Materials">
+        update tb_material
+        <trim prefix="set" suffixOverrides=",">
+            <if test="materialsNo!=null and materialsNo!=''">
+                material_no=#{materialsNo},
+            </if>
+            <if test="materialsName!=null and materialsName!=''">
+                material_name=#{materialsName},
+            </if>
+            <if test="businessId!=null and businessId!=''">
+                business_id=#{businessId},
+            </if>
+        </trim>
+        where id=#{id}
+    </update>
+    <delete id="removeMaterial" parameterType="com.queue.pojo.Materials">
+        delete from  tb_material where id=#{id}
+    </delete>
+</mapper>

@@ -1,7 +1,6 @@
 
 package com.queue.util;
 
-import org.hibernate.validator.constraints.EAN;
 
 import java.util.List;
 

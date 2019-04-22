@@ -11,6 +11,7 @@
         <if test="password!=null and password!=''">
             and password=#{password}
         </if>
+        order by create_time DESC
     </select>
 
     <insert id="insertUser" parameterType="com.queue.pojo.Users">
