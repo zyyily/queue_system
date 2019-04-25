@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.queue.mapper.BusinessMapper">
+    <select id="selectBusiness" parameterType="com.queue.pojo.Business" resultType="com.queue.pojo.Business">
+        select id as id,business_no as businessNo,business_name as businessName from tb_business where 1=1
+        <if test="id != null and id != ''">
+            and id=#{id}
+        </if>
+        <if test="businessNo != null and businessNo != ''">
+            and business_no=#{businessNo}
+        </if>
+        <if test="businessName != null and businessName != ''">
+            and business_name=#{businessName}
+        </if>
+    </select>
+</mapper>

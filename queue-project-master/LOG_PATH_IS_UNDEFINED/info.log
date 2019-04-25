@@ -1,0 +1,252 @@
+2019-04-24 09:59:10.568 [main] INFO  o.s.c.a.AnnotationConfigApplicationContext
+                -Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@f381794: startup date [Wed Apr 24 09:59:10 CST 2019]; root of context hierarchy
+2019-04-24 09:59:10.961 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor
+                -JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-04-24 09:59:11.018 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker
+                -Bean 'configurationPropertiesRebinderAutoConfiguration' of type [class org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$a24e51e8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-24 10:52:51.977 [main] INFO  o.s.c.a.AnnotationConfigApplicationContext
+                -Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@68e965f5: startup date [Wed Apr 24 10:52:51 CST 2019]; root of context hierarchy
+2019-04-24 10:52:52.213 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor
+                -JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-04-24 10:52:52.241 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker
+                -Bean 'configurationPropertiesRebinderAutoConfiguration' of type [class org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$aced8993] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-24 11:15:44.848 [main] INFO  o.s.c.a.AnnotationConfigApplicationContext
+                -Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@68e965f5: startup date [Wed Apr 24 11:15:44 CST 2019]; root of context hierarchy
+2019-04-24 11:15:45.162 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor
+                -JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-04-24 11:15:45.205 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker
+                -Bean 'configurationPropertiesRebinderAutoConfiguration' of type [class org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$aced8993] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-24 11:17:52.786 [main] INFO  o.s.c.a.AnnotationConfigApplicationContext
+                -Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@68e965f5: startup date [Wed Apr 24 11:17:52 CST 2019]; root of context hierarchy
+2019-04-24 11:17:53.049 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor
+                -JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-04-24 11:17:53.084 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker
+                -Bean 'configurationPropertiesRebinderAutoConfiguration' of type [class org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$aced8993] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-24 11:39:45.287 [main] INFO  o.s.c.a.AnnotationConfigApplicationContext
+                -Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@68e965f5: startup date [Wed Apr 24 11:39:45 CST 2019]; root of context hierarchy
+2019-04-24 11:39:45.639 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor
+                -JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-04-24 11:39:45.674 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker
+                -Bean 'configurationPropertiesRebinderAutoConfiguration' of type [class org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$aced8993] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-24 11:42:19.748 [main] INFO  o.s.c.a.AnnotationConfigApplicationContext
+                -Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@68e965f5: startup date [Wed Apr 24 11:42:19 CST 2019]; root of context hierarchy
+2019-04-24 11:42:20.021 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor
+                -JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-04-24 11:42:20.054 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker
+                -Bean 'configurationPropertiesRebinderAutoConfiguration' of type [class org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$aced8993] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-24 11:45:58.417 [main] INFO  o.s.c.a.AnnotationConfigApplicationContext
+                -Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@68e965f5: startup date [Wed Apr 24 11:45:58 CST 2019]; root of context hierarchy
+2019-04-24 11:45:58.675 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor
+                -JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-04-24 11:45:58.705 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker
+                -Bean 'configurationPropertiesRebinderAutoConfiguration' of type [class org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$aced8993] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-24 11:52:56.055 [main] INFO  o.s.c.a.AnnotationConfigApplicationContext
+                -Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@6c779568: startup date [Wed Apr 24 11:52:56 CST 2019]; root of context hierarchy
+2019-04-24 11:52:56.326 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor
+                -JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-04-24 11:52:56.360 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker
+                -Bean 'configurationPropertiesRebinderAutoConfiguration' of type [class org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$ba37cdb] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-24 11:54:43.997 [main] INFO  o.s.c.a.AnnotationConfigApplicationContext
+                -Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@68e965f5: startup date [Wed Apr 24 11:54:43 CST 2019]; root of context hierarchy
+2019-04-24 11:54:44.206 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor
+                -JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-04-24 11:54:44.232 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker
+                -Bean 'configurationPropertiesRebinderAutoConfiguration' of type [class org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$aced8993] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-24 11:55:36.472 [main] INFO  o.s.c.a.AnnotationConfigApplicationContext
+                -Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@68e965f5: startup date [Wed Apr 24 11:55:36 CST 2019]; root of context hierarchy
+2019-04-24 11:55:36.696 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor
+                -JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-04-24 11:55:36.724 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker
+                -Bean 'configurationPropertiesRebinderAutoConfiguration' of type [class org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$aced8993] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-24 11:57:21.776 [main] INFO  o.s.c.a.AnnotationConfigApplicationContext
+                -Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@68e965f5: startup date [Wed Apr 24 11:57:21 CST 2019]; root of context hierarchy
+2019-04-24 11:57:22.138 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor
+                -JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-04-24 11:57:22.192 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker
+                -Bean 'configurationPropertiesRebinderAutoConfiguration' of type [class org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$aced8993] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-24 13:59:26.690 [main] INFO  o.s.c.a.AnnotationConfigApplicationContext
+                -Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@2cdd0d4b: startup date [Wed Apr 24 13:59:26 CST 2019]; root of context hierarchy
+2019-04-24 13:59:26.950 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor
+                -JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-04-24 13:59:27.005 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker
+                -Bean 'configurationPropertiesRebinderAutoConfiguration' of type [class org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$105a6ef0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-24 14:00:25.842 [main] INFO  o.s.c.a.AnnotationConfigApplicationContext
+                -Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@f381794: startup date [Wed Apr 24 14:00:25 CST 2019]; root of context hierarchy
+2019-04-24 14:00:26.245 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor
+                -JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-04-24 14:00:26.297 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker
+                -Bean 'configurationPropertiesRebinderAutoConfiguration' of type [class org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$470d7c3a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-24 14:15:31.575 [main] INFO  o.s.c.a.AnnotationConfigApplicationContext
+                -Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@68e965f5: startup date [Wed Apr 24 14:15:31 CST 2019]; root of context hierarchy
+2019-04-24 14:15:31.789 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor
+                -JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-04-24 14:15:31.817 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker
+                -Bean 'configurationPropertiesRebinderAutoConfiguration' of type [class org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$aced8993] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-24 14:25:13.336 [main] INFO  o.s.c.a.AnnotationConfigApplicationContext
+                -Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@68e965f5: startup date [Wed Apr 24 14:25:13 CST 2019]; root of context hierarchy
+2019-04-24 14:25:13.782 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor
+                -JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-04-24 14:25:13.845 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker
+                -Bean 'configurationPropertiesRebinderAutoConfiguration' of type [class org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$aced8993] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-24 14:26:22.567 [main] INFO  o.s.c.a.AnnotationConfigApplicationContext
+                -Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@68e965f5: startup date [Wed Apr 24 14:26:22 CST 2019]; root of context hierarchy
+2019-04-24 14:26:23.006 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor
+                -JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-04-24 14:26:23.045 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker
+                -Bean 'configurationPropertiesRebinderAutoConfiguration' of type [class org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$aced8993] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-24 14:27:19.102 [main] INFO  o.s.c.a.AnnotationConfigApplicationContext
+                -Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@68e965f5: startup date [Wed Apr 24 14:27:19 CST 2019]; root of context hierarchy
+2019-04-24 14:27:19.487 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor
+                -JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-04-24 14:27:19.546 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker
+                -Bean 'configurationPropertiesRebinderAutoConfiguration' of type [class org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$aced8993] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-24 14:33:30.743 [main] INFO  o.s.c.a.AnnotationConfigApplicationContext
+                -Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@68e965f5: startup date [Wed Apr 24 14:33:30 CST 2019]; root of context hierarchy
+2019-04-24 14:33:31.090 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor
+                -JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-04-24 14:33:31.128 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker
+                -Bean 'configurationPropertiesRebinderAutoConfiguration' of type [class org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$aced8993] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-24 14:35:36.047 [main] INFO  o.s.c.a.AnnotationConfigApplicationContext
+                -Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@68e965f5: startup date [Wed Apr 24 14:35:36 CST 2019]; root of context hierarchy
+2019-04-24 14:35:36.555 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor
+                -JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-04-24 14:35:36.603 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker
+                -Bean 'configurationPropertiesRebinderAutoConfiguration' of type [class org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$aced8993] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-24 14:36:10.469 [main] INFO  o.s.c.a.AnnotationConfigApplicationContext
+                -Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@68e965f5: startup date [Wed Apr 24 14:36:10 CST 2019]; root of context hierarchy
+2019-04-24 14:36:10.854 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor
+                -JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-04-24 14:36:10.920 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker
+                -Bean 'configurationPropertiesRebinderAutoConfiguration' of type [class org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$aced8993] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-24 14:37:09.723 [main] INFO  o.s.c.a.AnnotationConfigApplicationContext
+                -Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@68e965f5: startup date [Wed Apr 24 14:37:09 CST 2019]; root of context hierarchy
+2019-04-24 14:37:10.070 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor
+                -JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-04-24 14:37:10.128 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker
+                -Bean 'configurationPropertiesRebinderAutoConfiguration' of type [class org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$aced8993] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-24 14:42:50.194 [main] INFO  o.s.c.a.AnnotationConfigApplicationContext
+                -Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@68e965f5: startup date [Wed Apr 24 14:42:50 CST 2019]; root of context hierarchy
+2019-04-24 14:42:50.621 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor
+                -JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-04-24 14:42:50.673 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker
+                -Bean 'configurationPropertiesRebinderAutoConfiguration' of type [class org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$aced8993] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-24 14:44:20.075 [main] INFO  o.s.c.a.AnnotationConfigApplicationContext
+                -Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@68e965f5: startup date [Wed Apr 24 14:44:20 CST 2019]; root of context hierarchy
+2019-04-24 14:44:20.464 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor
+                -JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-04-24 14:44:20.505 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker
+                -Bean 'configurationPropertiesRebinderAutoConfiguration' of type [class org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$aced8993] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-24 14:49:51.203 [main] INFO  o.s.c.a.AnnotationConfigApplicationContext
+                -Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@68e965f5: startup date [Wed Apr 24 14:49:51 CST 2019]; root of context hierarchy
+2019-04-24 14:49:51.515 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor
+                -JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-04-24 14:49:51.551 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker
+                -Bean 'configurationPropertiesRebinderAutoConfiguration' of type [class org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$aced8993] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-24 14:50:37.508 [main] INFO  o.s.c.a.AnnotationConfigApplicationContext
+                -Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@68e965f5: startup date [Wed Apr 24 14:50:37 CST 2019]; root of context hierarchy
+2019-04-24 14:50:37.854 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor
+                -JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-04-24 14:50:37.890 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker
+                -Bean 'configurationPropertiesRebinderAutoConfiguration' of type [class org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$aced8993] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-24 15:02:02.638 [main] INFO  o.s.c.a.AnnotationConfigApplicationContext
+                -Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@68e965f5: startup date [Wed Apr 24 15:02:02 CST 2019]; root of context hierarchy
+2019-04-24 15:02:02.993 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor
+                -JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-04-24 15:02:03.029 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker
+                -Bean 'configurationPropertiesRebinderAutoConfiguration' of type [class org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$aced8993] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-24 15:04:57.682 [main] INFO  o.s.c.a.AnnotationConfigApplicationContext
+                -Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@68e965f5: startup date [Wed Apr 24 15:04:57 CST 2019]; root of context hierarchy
+2019-04-24 15:04:58.018 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor
+                -JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-04-24 15:04:58.057 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker
+                -Bean 'configurationPropertiesRebinderAutoConfiguration' of type [class org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$aced8993] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-24 15:05:31.589 [main] INFO  o.s.c.a.AnnotationConfigApplicationContext
+                -Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@6f27a732: startup date [Wed Apr 24 15:05:31 CST 2019]; root of context hierarchy
+2019-04-24 15:05:32.072 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor
+                -JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-04-24 15:05:32.123 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker
+                -Bean 'configurationPropertiesRebinderAutoConfiguration' of type [class org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$58c37e2e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-24 15:07:13.491 [main] INFO  o.s.c.a.AnnotationConfigApplicationContext
+                -Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@68e965f5: startup date [Wed Apr 24 15:07:13 CST 2019]; root of context hierarchy
+2019-04-24 15:07:13.789 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor
+                -JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-04-24 15:07:13.826 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker
+                -Bean 'configurationPropertiesRebinderAutoConfiguration' of type [class org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$aced8993] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-24 15:09:26.735 [main] INFO  o.s.c.a.AnnotationConfigApplicationContext
+                -Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@68e965f5: startup date [Wed Apr 24 15:09:26 CST 2019]; root of context hierarchy
+2019-04-24 15:09:27.021 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor
+                -JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-04-24 15:09:27.052 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker
+                -Bean 'configurationPropertiesRebinderAutoConfiguration' of type [class org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$aced8993] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-24 15:13:20.338 [main] INFO  o.s.c.a.AnnotationConfigApplicationContext
+                -Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@68e965f5: startup date [Wed Apr 24 15:13:20 CST 2019]; root of context hierarchy
+2019-04-24 15:13:20.632 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor
+                -JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-04-24 15:13:20.664 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker
+                -Bean 'configurationPropertiesRebinderAutoConfiguration' of type [class org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$aced8993] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-24 15:15:09.466 [main] INFO  o.s.c.a.AnnotationConfigApplicationContext
+                -Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@f381794: startup date [Wed Apr 24 15:15:09 CST 2019]; root of context hierarchy
+2019-04-24 15:15:09.676 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor
+                -JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-04-24 15:15:09.705 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker
+                -Bean 'configurationPropertiesRebinderAutoConfiguration' of type [class org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$470d7c3a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-24 15:16:11.539 [main] INFO  o.s.c.a.AnnotationConfigApplicationContext
+                -Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@68e965f5: startup date [Wed Apr 24 15:16:11 CST 2019]; root of context hierarchy
+2019-04-24 15:16:11.806 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor
+                -JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-04-24 15:16:11.838 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker
+                -Bean 'configurationPropertiesRebinderAutoConfiguration' of type [class org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$aced8993] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-24 15:19:25.931 [main] INFO  o.s.c.a.AnnotationConfigApplicationContext
+                -Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@68e965f5: startup date [Wed Apr 24 15:19:25 CST 2019]; root of context hierarchy
+2019-04-24 15:19:26.378 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor
+                -JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-04-24 15:19:26.415 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker
+                -Bean 'configurationPropertiesRebinderAutoConfiguration' of type [class org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$aced8993] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-24 16:14:02.832 [main] INFO  o.s.c.a.AnnotationConfigApplicationContext
+                -Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@68e965f5: startup date [Wed Apr 24 16:14:02 CST 2019]; root of context hierarchy
+2019-04-24 16:14:03.158 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor
+                -JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-04-24 16:14:03.197 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker
+                -Bean 'configurationPropertiesRebinderAutoConfiguration' of type [class org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$aced8993] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-24 16:31:26.304 [main] INFO  o.s.c.a.AnnotationConfigApplicationContext
+                -Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@68e965f5: startup date [Wed Apr 24 16:31:26 CST 2019]; root of context hierarchy
+2019-04-24 16:31:26.522 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor
+                -JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-04-24 16:31:26.550 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker
+                -Bean 'configurationPropertiesRebinderAutoConfiguration' of type [class org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$aced8993] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-24 16:32:12.767 [main] INFO  o.s.c.a.AnnotationConfigApplicationContext
+                -Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@68e965f5: startup date [Wed Apr 24 16:32:12 CST 2019]; root of context hierarchy
+2019-04-24 16:32:13.015 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor
+                -JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-04-24 16:32:13.045 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker
+                -Bean 'configurationPropertiesRebinderAutoConfiguration' of type [class org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$aced8993] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-24 17:02:16.971 [main] INFO  o.s.c.a.AnnotationConfigApplicationContext
+                -Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@6f27a732: startup date [Wed Apr 24 17:02:16 CST 2019]; root of context hierarchy
+2019-04-24 17:02:17.258 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor
+                -JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-04-24 17:02:17.296 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker
+                -Bean 'configurationPropertiesRebinderAutoConfiguration' of type [class org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$58c37e2e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-24 17:02:50.429 [main] INFO  o.s.c.a.AnnotationConfigApplicationContext
+                -Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@68e965f5: startup date [Wed Apr 24 17:02:50 CST 2019]; root of context hierarchy
+2019-04-24 17:02:50.646 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor
+                -JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-04-24 17:02:50.672 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker
+                -Bean 'configurationPropertiesRebinderAutoConfiguration' of type [class org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$aced8993] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-24 17:15:56.052 [main] INFO  o.s.c.a.AnnotationConfigApplicationContext
+                -Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@68e965f5: startup date [Wed Apr 24 17:15:56 CST 2019]; root of context hierarchy
+2019-04-24 17:15:56.310 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor
+                -JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-04-24 17:15:56.339 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker
+                -Bean 'configurationPropertiesRebinderAutoConfiguration' of type [class org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$aced8993] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-24 17:21:50.849 [main] INFO  o.s.c.a.AnnotationConfigApplicationContext
+                -Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@68e965f5: startup date [Wed Apr 24 17:21:50 CST 2019]; root of context hierarchy
+2019-04-24 17:21:51.065 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor
+                -JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-04-24 17:21:51.092 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker
+                -Bean 'configurationPropertiesRebinderAutoConfiguration' of type [class org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$aced8993] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-24 17:22:25.239 [main] INFO  o.s.c.a.AnnotationConfigApplicationContext
+                -Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@68e965f5: startup date [Wed Apr 24 17:22:25 CST 2019]; root of context hierarchy
+2019-04-24 17:22:25.441 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor
+                -JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-04-24 17:22:25.470 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker
+                -Bean 'configurationPropertiesRebinderAutoConfiguration' of type [class org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$aced8993] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
