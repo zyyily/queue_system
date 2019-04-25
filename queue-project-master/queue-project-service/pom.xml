@@ -14,8 +14,10 @@
     <modules>
         <module>queue-project-service-usermanage</module>
         <module>queue-project-service-windowManage</module>
-        <module>queue-project-queueManage</module>
-        <module>queue-project-materialsManage</module>
+        <module>queue-project-service-queueManage</module>
+        <module>queue-project-service-materialsManage</module>
+        <module>queue-project-service-messageManage</module>
+        <module>queue-project-service-staffManage</module>
     </modules>
     <properties>
         <java.version>1.8</java.version>

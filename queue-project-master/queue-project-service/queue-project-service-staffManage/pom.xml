@@ -9,9 +9,8 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.queue</groupId>
-    <artifactId>queue-project-service-userManage</artifactId>
+    <artifactId>queue-project-service-staffManage</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>queue-project-userManage</name>
     <properties>
         <java.version>1.8</java.version>
     </properties>
@@ -30,7 +29,6 @@
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
-
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>

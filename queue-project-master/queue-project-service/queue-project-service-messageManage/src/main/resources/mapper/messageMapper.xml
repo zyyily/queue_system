@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.queue.mapper.MessageMapper">
+    <select id="getMessageList" parameterType="com.queue.pojo.Message" resultType="com.queue.pojo.Message">
+        select m.id as id,m.user_id as userId,u.user_no as userNo,m.message_content as messageContent,m.staff_id as staffId,
+        s.staff_name as staffName,m.message_type as messageType,
+        case when m.message_type=1 then '系统评价' when m.message_type=0 then '工作人员评价' end as messageTypeName,
+        m.create_time as createTime from tb_message m
+        left join tb_user u on m.user_id=u.id
+        left join tb_staff s on s.id=m.staff_id
+        where 1=1
+        <if test="id!=null and id!=''">
+            and m.id=#{id}
+        </if>
+        <if test="userId!=null and userId!=''">
+            and m.user_id=#{userId}
+        </if>
+        <if test="staffId!=null and staffId!=''">
+            and m.staffId=#{staffId}
+        </if>
+        <if test="messageType!=null and messageType!=''">
+            and m.message_type=#{messageType}
+        </if>
+    </select>
+</mapper>

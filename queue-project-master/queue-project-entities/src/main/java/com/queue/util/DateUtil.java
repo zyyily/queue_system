@@ -37,14 +37,14 @@ public class DateUtil {
 
 
     /**
-     * HHTG+年月+8+0001
-     * 每月从0001开始计数
+     * 每天从0001开始计数
      * */
     public static synchronized String getnumber(String thisCode){
 
         String id = null;
         Date date = new Date();
         SimpleDateFormat formatter = new SimpleDateFormat("yyMMdd");
+        //设置时区
 //        TimeZone time = TimeZone.getTimeZone("ETC/GMT-8");
 //        TimeZone.setDefault(time);
         System.out.println(formatter.format(date));

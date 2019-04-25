@@ -63,4 +63,26 @@ public class UserServiceImpl implements UserService {
         resultBean.setSuccess(true);
         return resultBean;
     }
+
+    @Override
+    public ResultBean removeUser(Users users) throws Exception {
+        ResultBean resultBean=new ResultBean();
+        userMapper.removeUser(users);
+        resultBean.setMessage("注销成功");
+        resultBean.setSuccess(true);
+        return resultBean;
+    }
+
+    @Override
+    public ResultBean checkRepeat(Users users) throws Exception {
+        ResultBean resultBean=new ResultBean();
+        List<Users> users1=userMapper.selectUserList(users);
+        if (users1.size()>0){
+            resultBean.setSuccess(false);
+            resultBean.setMessage("用户名已被占用！");
+        }else {
+            resultBean.setSuccess(true);
+        }
+        return resultBean;
+    }
 }

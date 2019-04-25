@@ -51,4 +51,18 @@ public class UserController {
         userService.updateUser(users);
         return  userService.updateUser(users);
     }
+
+    @RequestMapping(value = "/removeUser",method = RequestMethod.POST)
+    public ResultBean removeUser(@RequestBody String params)throws Exception{
+        logger.info("注销所需要的参数："+params);
+        Users users=JSON.parseObject(params,new TypeReference<Users>(){});
+        return userService.removeUser(users);
+    }
+
+    @RequestMapping(value = "/checkRepeat",method = RequestMethod.POST)
+    public ResultBean checkRepeat(@RequestBody String params) throws Exception{
+        logger.info("查询用户名是否重复参数"+params);
+        Users users=JSON.parseObject(params,new TypeReference<Users>(){});
+        return userService.checkRepeat(users);
+    }
 }

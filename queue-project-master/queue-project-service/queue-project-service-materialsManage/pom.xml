@@ -9,7 +9,7 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.queue</groupId>
-    <artifactId>queue-project-materialsManage</artifactId>
+    <artifactId>queue-project-service-materialsManage</artifactId>
     <version>0.0.1-SNAPSHOT</version>
 
     <properties>

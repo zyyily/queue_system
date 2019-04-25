@@ -12,7 +12,7 @@
     <modules>
         <module>queue-project-service</module>
         <module>queue-project-entities</module>
-        <module>queue-project-eureck</module>
+        <module>queue-project-eureka</module>
         <module>queue-project-zuul</module>
     </modules>
     <parent>

@@ -12,4 +12,5 @@ public interface UserMapper {
     List<Users> selectUserList(Users users);
     void insertUser(Users users);
     void updateUser(Users users);
+    void removeUser(Users users);
 }

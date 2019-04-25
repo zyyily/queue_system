@@ -9,4 +9,6 @@ public interface UserService {
     ResultBean register(Users users)throws Exception;
     ResultBean getUserList(Users users)throws Exception;
     ResultBean updateUser(Users users)throws Exception;
+    ResultBean removeUser(Users users) throws Exception;
+    ResultBean checkRepeat(Users users) throws Exception;
 }
