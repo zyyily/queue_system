@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <configuration scan="true" scanPeriod="10 seconds">
-    <include resource="org/springframework/boot/logging/logback/base.xml" />
+    <include resource="org/springframework/boot/logging/logback/base.xml"/>
 
     <appender name="INFO_FILE"
               class="ch.qos.logback.core.rolling.RollingFileAppender">
@@ -42,7 +42,7 @@
         </layout>
     </appender>
     <root level="INFO">
-        <appender-ref ref="INFO_FILE" />
-        <appender-ref ref="ERROR_FILE" />
+        <appender-ref ref="INFO_FILE"/>
+        <appender-ref ref="ERROR_FILE"/>
     </root>
 </configuration>

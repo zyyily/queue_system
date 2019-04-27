@@ -2,24 +2,54 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.queue.mapper.MessageMapper">
     <select id="getMessageList" parameterType="com.queue.pojo.Message" resultType="com.queue.pojo.Message">
-        select m.id as id,m.user_id as userId,u.user_no as userNo,m.message_content as messageContent,m.staff_id as staffId,
-        s.staff_name as staffName,m.message_type as messageType,
-        case when m.message_type=1 then '系统评价' when m.message_type=0 then '工作人员评价' end as messageTypeName,
-        m.create_time as createTime from tb_message m
-        left join tb_user u on m.user_id=u.id
-        left join tb_staff s on s.id=m.staff_id
+        select m.id as id, m.user_id as userId, m.message_content as messageContent, m.staff_id as staffId,
+        m.message_type as messageType, m.queue_id as queueId
+        from tb_message m
         where 1=1
-        <if test="id!=null and id!=''">
-            and m.id=#{id}
+        <if test="id != null and id != ''">
+            and m.id = #{id}
         </if>
-        <if test="userId!=null and userId!=''">
-            and m.user_id=#{userId}
+        <if test="userId != null and userId != ''">
+            and m.user_id = #{userId}
         </if>
-        <if test="staffId!=null and staffId!=''">
-            and m.staffId=#{staffId}
+        <if test="messageContent != null and messageContent != ''">
+            and m.message_content = #{messageContent}
         </if>
-        <if test="messageType!=null and messageType!=''">
-            and m.message_type=#{messageType}
+        <if test="staffId != null and staffId != ''">
+            and m.staff_id = #{staffId}
         </if>
+        <if test="messageType != null and messageType != ''">
+            and m.message_type = #{messageType}
+        </if>
+        <if test="queueId != null and queueId != ''">
+            and m.queue_id = #{queueId}
+        </if>
+        order by m.create_time DESC
     </select>
+
+    <insert id="addMessage" parameterType="com.queue.pojo.Message">
+        insert into tb_message(user_id,message_content,staff_id,message_type,queue_id)
+        values (#{userId},#{messageContent},#{staffId},#{messageType},#{queueId})
+    </insert>
+
+    <update id="updateMessage" parameterType="com.queue.pojo.Message">
+        update tb_message
+        <trim prefix="set" suffixOverrides=",">
+            <if test="messageContent!=null and messageContent!=''">
+                message_content=#{messageContent},
+            </if>
+            <if test="staffId!=null and staffId!=''">
+                staff_id=#{staffId},
+            </if>
+            <if test="messageType!=null and messageType!=''">
+                message_type=#{messageType},
+            </if>
+        </trim>
+        where id=#{id}
+    </update>
+
+    <delete id="removeMessage" parameterType="com.queue.pojo.Message">
+        delete from tb_message where id=#{id}
+    </delete>
+
 </mapper>

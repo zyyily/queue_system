@@ -18,6 +18,7 @@
         <module>queue-project-service-materialsManage</module>
         <module>queue-project-service-messageManage</module>
         <module>queue-project-service-staffManage</module>
+        <module>queue-project-service-businessManage</module>
     </modules>
     <properties>
         <java.version>1.8</java.version>

@@ -7,8 +7,10 @@ import lombok.Setter;
 @Getter
 public class Window {
     private Integer id;
-    private Integer windowNo;
-    private String businessType;
+    private String windowNo;
+    private Integer businessId;
+    private String businessNo;
+    private String businessName;
     private Integer status;
     private String statusName;
     private Integer businessNum;
@@ -17,4 +19,5 @@ public class Window {
     private String windowStatusName;
     private String staffNo;
     private String staffName;
+    private Integer waitNum;
 }

@@ -2,6 +2,7 @@ package com.queue.api;
 
 import com.alibaba.fastjson.TypeReference;
 
+import com.queue.pojo.Business;
 import com.queue.pojo.Window;
 import com.queue.service.WindowService;
 import com.queue.util.ResultBean;
@@ -22,11 +23,59 @@ public class WindowController {
     @Autowired
     private WindowService windowService;
 
-    @RequestMapping(value = "/getWindows",method = RequestMethod.POST)
-    public ResultBean getWindows(@RequestBody String params) throws Exception {
-        logger.info("参数："+params);
-        Window window = JSON.parseObject(params,new TypeReference<Window>(){});
-        ResultBean result = windowService.getWindowList(window);
-        return result;
+    @RequestMapping(value = "/getWindows", method = RequestMethod.POST)
+    public ResultBean getWindows(@RequestBody String params) {
+        logger.info("获取窗口接收的参数：" + params);
+
+        Window window = JSON.parseObject(params, new TypeReference<Window>() {
+        });
+        try {
+            return windowService.getWindowList(window);
+        } catch (Exception e) {
+            logger.error("getWindow is error:" + e);
+            return new ResultBean(false, "服务器错误");
+        }
+    }
+
+    @RequestMapping(value = "/addWindow", method = RequestMethod.POST)
+    public ResultBean addWindow(@RequestBody String params) {
+        logger.info("添加窗口接收的参数：" + params);
+
+        Window window = JSON.parseObject(params, new TypeReference<Window>() {
+        });
+        try {
+            return windowService.addWindow(window);
+        } catch (Exception e) {
+            logger.error("addWindow is error:" + e);
+            return new ResultBean(false, "服务器错误");
+        }
+    }
+
+    @RequestMapping(value = "/modifyWindow", method = RequestMethod.POST)
+    public ResultBean modifyWindow(@RequestBody String params) {
+        logger.info("修改窗口接收的参数：" + params);
+
+        Window window = JSON.parseObject(params, new TypeReference<Window>() {
+        });
+        try {
+            return windowService.modifyWindow(window);
+        } catch (Exception e) {
+            logger.error("modifyWindow is error:" + e);
+            return new ResultBean(false, "服务器错误");
+        }
+    }
+
+    @RequestMapping(value = "/deleteWindow", method = RequestMethod.POST)
+    public ResultBean deleteWindow(@RequestBody String params) {
+        logger.info("修改窗口接收的参数：" + params);
+
+        Window window = JSON.parseObject(params, new TypeReference<Window>() {
+        });
+        try {
+            return windowService.deleteWindow(window);
+        } catch (Exception e) {
+            logger.error("deleteWindow is error:" + e);
+            return new ResultBean(false, "服务器错误");
+        }
     }
 }
