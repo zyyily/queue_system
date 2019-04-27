@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.queue.mapper.WindowMapper">
+
+    <select id="selectWindow" parameterType="com.queue.pojo.Window" resultType="com.queue.pojo.Window">
+        select w.id as id,w.window_no as windowNo,b.business_no as businessNo,b.business_name as businessName,
+        w.status as status,w.business_num as businessNum,w.business_now_num as businessNowNum,w.window_status as
+        windowStatus,
+        s.staff_no as staffNo,s.staff_name as staffName,count(q.user_id) as waitNum,
+        case when w.status=0 then '关闭' when w.status=1 then '开放' end as statusName,
+        case when w.window_status=0 then '空闲' when w.window_status=1 then '已满' end as windowStatusName
+        from tb_window w
+        left join tb_staff s on w.id = s.window_id
+        left join tb_business b on w.business_id = b.id
+        left join tb_queue q on w.id = q.window_id
+        where 1=1
+        <!--<if test="id != null and id != ''">-->
+            <!--and w.id = #{id}-->
+        <!--</if>-->
+        <if test="windowNo!=null and windowNo!=''">
+            and w.window_no=#{windowNo}
+        </if>
+        <if test="businessNo!=null and businessNo!=''">
+            and b.business_no=#{businessNo}
+        </if>
+        <if test="businessName!=null and businessName!=''">
+            and b.business_name=#{businessName}
+        </if>
+        <if test="businessNum!=null and businessNum!=''">
+            and w.business_num=#{businessNum}
+        </if>
+        <if test="businessNowNum!=null and businessNowNum!=''">
+            and w.business_now_num=#{businessNowNum}
+        </if>
+        <if test="status!=null and status!=''">
+            and w.status=#{status}
+        </if>
+        <if test="windowStatus!=null and windowStatus!=''">
+            and w.window_status=#{windowStatus}
+        </if>
+        <if test="staffNo!=null and staffNo!=''">
+            and w.staff_no=#{staffNo}
+        </if>
+        <if test="staffName!=null and staffName!=''">
+            and w.staff_name=#{staffName}
+        </if>
+        group by w.id,s.staff_no,s.staff_name
+        order by w.create_time desc,waitNum
+    </select>
+
+    <insert id="insertWindow" parameterType="com.queue.pojo.Window">
+        insert into tb_window(window_no,business_id,status,business_num,business_now_num,window_status)
+        values (#{windowNo},#{businessId},#{status},#{businessNum},#{businessNowNum},#{windowStatus})
+    </insert>
+
+    <update id="updateWindow" parameterType="com.queue.pojo.Window">
+        update tb_window
+        <trim prefix="set" suffixOverrides=",">
+            <if test="windowNo!=null and windowNo!=''">
+                window_no=#{windowNo}
+            </if>
+            <if test="businessId!=null and businessId!=''">
+                business_id=#{businessId},
+            </if>
+            <if test="status!=null and status!=''">
+                status=#{status},
+            </if>
+            <if test="businessNum!=null and businessNum!=''">
+                business_num=#{businessNum}
+            </if>
+            <if test="businessNowNum!=null and businessNowNum!=''">
+                business_now_num=#{businessNowNum}
+            </if>
+            <if test="windowStatus!=null and windowStatus!=''">
+                window_status=#{windowStatus}
+            </if>
+        </trim>
+        where id=#{id}
+    </update>
+
+    <!--删除一个窗口后，其他表里和该窗口关联的值未删除-->
+    <delete id="deleteWindow" parameterType="com.queue.pojo.Window">
+        delete from tb_window where id=#{id}
+    </delete>
+
+</mapper>
