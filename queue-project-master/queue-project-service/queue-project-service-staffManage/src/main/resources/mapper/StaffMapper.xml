@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper  namespace="com.queue.mapper.StaffMapper">
+    <select id="getStaffList" parameterType="com.queue.pojo.Staff" resultType="com.queue.pojo.Staff">
+        select s.id as id,s.staff_no as staffNo,s.business_id as businessId,b.business_name as businessName,
+        s.staff_name as staffName,w.id as windowId,w.window_no as windowNo,s.create_time as createTime
+        from tb_staff s
+        left join tb_window w on w.id=s.window_id
+        left join tb_business b on b.id=s.business_id
+        where 1=1
+        <if test="id!=null and id!=''">
+            and s.id=#{id}
+        </if>
+        <if test="staffNo!=null and staffNo!=''">
+            and s.id=#{id}
+        </if>
+        <if test="businessId!=null and businessId!=''">
+            and s.business_id=#{businessId}
+        </if>
+        <if test="windowId!=null and windowId!=''">
+            and s.window_id=#{windowId}
+        </if>
+        order by s.create_time desc
+    </select>
+
+    <insert id="insertStaff" parameterType="com.queue.pojo.Staff" >
+        insert into tb_staff(staff_no,business_id,staff_name,window_id,create_time)
+        values (#{staffNo},#{businessId},#{staffName},#{windowId},now())
+    </insert>
+
+
+    <update id="updateStaff" parameterType="com.queue.pojo.Staff" >
+        update tb_staff
+        set staff_no=#{staffNo},staff_name=#{staffName},business_id=#{businessId},
+        window_id=#{windowId}
+        where id=#{id}
+    </update>
+    <delete id="deleteStaff" parameterType="com.queue.pojo.Staff">
+        delete from tb_staff
+        where id=#{id}
+    </delete>
+</mapper>

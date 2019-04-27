@@ -3,7 +3,8 @@
 <mapper  namespace="com.queue.mapper.QueueMapper">
     <select id="getQueueList" parameterType="com.queue.pojo.Queues" resultType="com.queue.pojo.Queues">
         select q.id as id,q.queue_no as queueNo,q.user_id as userId,u.user_no as userNo,b.id as businessId,b.business_name as businessName,
-        w.id as windowId,w.window_no as windowNo,q.create_time as createTime,q.queue_num as queueNum,q.queue_num*2 as waitTime
+        w.id as windowId,w.window_no as windowNo,q.create_time as createTime,q.queue_num as queueNum,q.queue_num*2 as waitTime,q.handler as handler,
+        case when q.transact=0 then '未办理' when q.transact=1 then '已办理' when q.transact=0 then '已过号' end as transactName
         from tb_queue q
         left join tb_user u on u.id=q.user_id
         left join tb_business b on b.id=q.business_id
@@ -12,11 +13,20 @@
         <if test="windowId!=null and windowId!=''">
             and q.window_id=#{windowId}
         </if>
-        <if test="createTime!=null and createTime!=null">
+        <if test="createTime!=null and createTime!=''">
             and q.create_time like '%${createTime}%' order by q.id
+        </if>
+        <if test="userNo!=null and userNo!=''">
+            and u.user_no=#{userNo}
+        </if>
+        <if test="handler!=null and hander!=''">
+            and handler=#{handler}
         </if>
         order by q.create_time DESC
     </select>
 
-
+    <insert id="addQueue" parameterType="com.queue.pojo.Queues" >
+        isnert into tb_queue(queue_no,user_id,bussiness_id,window_id,queue_num,create_time,handler,transact)
+        values(#{queueNo},(select id from tb_user where user_no=#{userNo}),#{bussinessId},#{queueNum},now(),#{handler})
+    </insert>
 </mapper>

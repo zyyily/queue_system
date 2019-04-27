@@ -25,6 +25,7 @@ public class UserServiceImpl implements UserService {
             resultBean.setMessage("用户名或密码错误！");
             resultBean.setSuccess(false);
         }else{
+            resultBean.setDataList(newUsers);
             resultBean.setMessage("登陆成功");
             resultBean.setSuccess(true);
         }
@@ -35,6 +36,11 @@ public class UserServiceImpl implements UserService {
     @Override
     public ResultBean register(Users users) throws Exception {
         ResultBean resultBean=new ResultBean();
+        if (!checkRepeat(users).isSuccess()){
+            resultBean.setSuccess(false);
+            resultBean.setMessage("注册失败,用户名已存在!");
+            return resultBean;
+        }
         Date date=new Date();
         SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
         users.setCreateTime(sdf.format(date));
@@ -57,7 +63,20 @@ public class UserServiceImpl implements UserService {
     @Override
     public ResultBean updateUser(Users users) throws Exception {
         ResultBean resultBean=new ResultBean();
-        users.setPassword(MD5Util.md5Encode(users.getPassword()));
+        Users qryUser=new Users();
+        qryUser.setUserNo(users.getUserNo());
+        //修改密码
+        if (users.getPassword()!=null&&!users.getPassword().equals("")) {
+            String oldPassword=userMapper.selectUserList(qryUser).get(0).getPassword();
+            if (oldPassword.equals(MD5Util.md5Encode(users.getPassword()))) {
+                users.setPassword(MD5Util.md5Encode(users.getNewPassword()));
+                userMapper.updateUser(users);
+            } else{
+                resultBean.setMessage("原密码错误");
+                resultBean.setSuccess(false);
+                return resultBean;
+            }
+        }
         userMapper.updateUser(users);
         resultBean.setMessage("更新成功");
         resultBean.setSuccess(true);
@@ -73,11 +92,14 @@ public class UserServiceImpl implements UserService {
         return resultBean;
     }
 
+    //检测用户名是否存在
     @Override
     public ResultBean checkRepeat(Users users) throws Exception {
         ResultBean resultBean=new ResultBean();
-        List<Users> users1=userMapper.selectUserList(users);
-        if (users1.size()>0){
+        Users qryUsers=new Users();
+        qryUsers.setUserNo(users.getUserNo());
+        List<Users> users1=userMapper.selectUserList(qryUsers);
+        if (users1.size()>0&&users1.get(0).getId()!=users.getId()){
             resultBean.setSuccess(false);
             resultBean.setMessage("用户名已被占用！");
         }else {

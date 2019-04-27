@@ -19,4 +19,7 @@ public class Queues implements Serializable {
     private Integer queueNum;
     private String createTime;
     private Integer waitTime;
+    private String handler;
+    private Integer transact;
+    private String transactName;
 }

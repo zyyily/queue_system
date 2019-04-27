@@ -41,14 +41,14 @@ public class UserController {
     public ResultBean getUserList(@RequestBody String params) throws Exception {
         logger.info("查询所需的参数："+params);
         Users users=JSON.parseObject(params,new TypeReference<Users>(){});
-        userService.getUserList(users);
         return userService.getUserList(users);
     }
 
     @RequestMapping(value = "/updateUser",method = RequestMethod.POST)
     public ResultBean updateUser(@RequestBody String params)throws Exception{
+
+        logger.info("修改用户信息参数:"+params);
         Users users=JSON.parseObject(params,new TypeReference<Users>(){});
-        userService.updateUser(users);
         return  userService.updateUser(users);
     }
 

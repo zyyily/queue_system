@@ -37,9 +37,15 @@ public class MaterialsServiceImpl implements MaterialsService {
         resultBean.setMessage("添加成功");
         return resultBean;
     }
+
     @Override
     public ResultBean updateMaterial(Materials materials) throws Exception {
         ResultBean resultBean=new ResultBean();
+        if (!checkRepeat(materials)){
+            resultBean.setSuccess(false);
+            resultBean.setMessage("修改失败，材料号已存在");
+            return resultBean;
+        }
         materialsMapper.updateMaterial(materials);
         resultBean.setSuccess(true);
         resultBean.setMessage("修改成功");
@@ -53,5 +59,17 @@ public class MaterialsServiceImpl implements MaterialsService {
         resultBean.setSuccess(true);
         resultBean.setMessage("删除成功");
         return resultBean;
+    }
+
+    @Override
+    public Boolean checkRepeat(Materials materials) throws Exception {
+        Materials qryMaterials=new Materials();
+        qryMaterials.setMaterialsNo(materials.getMaterialsNo());
+        List<Materials> materialsList=materialsMapper.getMaterialsList(qryMaterials);
+        if (materialsList.size()>0&&materialsList.get(0).getId()!=materials.getId()){
+           return false;
+        }else {
+            return true;
+        }
     }
 }

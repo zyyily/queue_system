@@ -11,10 +11,14 @@
         </if>
         order by m.create_time DESC
     </select>
+
+
     <insert id="addMaterial" parameterType="com.queue.pojo.Materials">
         insert tb_material(material_no,material_name,business_id,create_time)
         values (#{materialsNo},#{materialsName},#{businessId},#{createTime})
     </insert>
+
+
     <update id="updateMaterial" parameterType="com.queue.pojo.Materials">
         update tb_material
         <trim prefix="set" suffixOverrides=",">
@@ -30,6 +34,8 @@
         </trim>
         where id=#{id}
     </update>
+
+
     <delete id="removeMaterial" parameterType="com.queue.pojo.Materials">
         delete from  tb_material where id=#{id}
     </delete>

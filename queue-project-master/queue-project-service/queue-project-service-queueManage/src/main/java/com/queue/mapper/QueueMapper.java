@@ -10,5 +10,9 @@ import java.util.List;
 @Mapper
 public interface QueueMapper {
     List<Queues> getQueueList(Queues queues)throws Exception;
+
+    void addQueue(Queues queues) throws Exception;
+
+    void missTurnHandle(Queues queues) throws Exception;
 }
 

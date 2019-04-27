@@ -8,4 +8,5 @@ public interface MaterialsService {
     ResultBean addMaterial(Materials materials)throws Exception;
     ResultBean updateMaterial(Materials materials)throws Exception;
     ResultBean removeMaterial(Materials materials)throws Exception;
+    Boolean checkRepeat(Materials materials) throws Exception;
 }

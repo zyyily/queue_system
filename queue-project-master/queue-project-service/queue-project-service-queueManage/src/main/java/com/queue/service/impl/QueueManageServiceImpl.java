@@ -29,17 +29,29 @@ public class QueueManageServiceImpl implements QueueManageService {
     @Override
     public ResultBean addQueue(Queues queues) throws Exception {
         ResultBean resultBean=new ResultBean();
+        queues.setQueueNum(queueMapper.getQueueList(queues).size());
         Date date=new Date();
         SimpleDateFormat sdf = new SimpleDateFormat("yyMMDD");
         String dates=sdf.format(date);
         queues.setCreateTime(dates);
         List<Queues> queuesList=queueMapper.getQueueList(queues);
-        if (queuesList.size()==0)
+        if (queuesList==null||queuesList.size()==0)
             queues.setQueueNo(dates+"0001");
         else{
             queues.setQueueNo(DateUtil.getnumber(queuesList.get(queuesList.size()-1).getQueueNo()));
         }
-        SimpleDateFormat newSdf = new SimpleDateFormat("yyMMDD ");
+        queues.setTransact(0);
+        queueMapper.addQueue(queues);
+        resultBean.setSuccess(true);
+        resultBean.setMessage("预约成功");
+        return resultBean;
+    }
+
+    @Override
+    public ResultBean missTurnHandle(Queues queues) throws Exception {
+        ResultBean resultBean=new ResultBean();
+        queues.setTransact(0);
+        queues.setQueueNum(1);
 
         return null;
     }
